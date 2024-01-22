@@ -18,9 +18,9 @@
 </head>
 
 <body>
-    <nav class="container mx-auto sm:px-5 lg:px-[135px]">
-        <div class="navbar">
-            <div class="navbar-start space-x-4">
+    <nav class="container mx-auto px-5 lg:px-[135px]">
+        <div class="navbar px-0">
+            <div class="navbar-start">
                 <div class="dropdown">
                     <div tabindex="0" role="button" class="lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -38,7 +38,7 @@
                         <li><a>Contact</a></li>
                     </ul>
                 </div>
-                <a class="text-2xl lg:text-3xl font-extrabold">Hockey<span class="primary-color">'</span>s</a>
+                <a class="text-2xl lg:text-3xl font-extrabold ml-2">Hockey<span class="primary-color">'</span>s</a>
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu-horizontal px-1 flex items-center justify-between gap-11 text-[#424247]">
@@ -49,9 +49,9 @@
                     <li><a class="hover:text-[#FF4240]" href="#">Contact</a></li>
                 </ul>
             </div>
-            <div class="navbar-end flex items-center gap-4">
+            <div class="navbar-end flex justify-end items-center gap-4">
                 <button type="button" class="hidden lg:flex items-center hover:text-[#FF4240] text-2xl text-[#424247]">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-magnifying-glass "></i>
                 </button>
                 <a
                     class="px-[17px] py-2 text-lg font-bold rounded-lg cursor-pointer bg-[#FF4240] text-white lg:py-[15px] lg:px-6 lg:text-xl">Get
@@ -59,9 +59,50 @@
             </div>
         </div>
     </nav>
-
     <main>
-        <section class="">
+        <!-- carousel section  -->
+        <section class="container mx-auto px-5 lg:px-[135px] mt-8">
+            <div class="flex flex-col gap-4 lg:relative">
+                <div class="carousel w-full">
+                    <div id="slide1" class="carousel-item relative w-full">
+                        <img src="./assets/Images/1.png" class="w-full max-h-[550px] rounded-xl lg:rounded-2xl" />
+                        <div
+                            class="absolute flex gap-2 left-1/2 bottom-5 -translate-x-1/2 lg:bottom-8 lg:left-8 lg:-translate-x-0">
+                            <a href="#slide3"
+                                class="bg-black w-10 h-10 rounded-full text-white flex justify-center items-center">❮</a>
+                            <a href="#slide2"
+                                class="bg-black w-10 h-10 rounded-full text-white flex justify-center items-center">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide2" class="carousel-item relative w-full">
+                        <img src="./assets/Images/12.jpg" class="w-full max-h-[550px] rounded-xl lg:rounded-2xl" />
+                        <div
+                            class="absolute flex gap-2 left-1/2 bottom-5 -translate-x-1/2 lg:bottom-8 lg:left-8 lg:-translate-x-0">
+                            <a href="#slide1"
+                                class="bg-black w-10 h-10 rounded-full text-white flex justify-center items-center">❮</a>
+                            <a href="#slide3"
+                                class="bg-black w-10 h-10 rounded-full text-white flex justify-center items-center">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide3" class="carousel-item relative w-full">
+                        <img src="./assets/Images/13.jpg" class="w-full max-h-[550px] rounded-xl lg:rounded-2xl" />
+                        <div
+                            class="absolute flex gap-2 left-1/2 bottom-5 -translate-x-1/2 lg:bottom-8 lg:left-8 lg:-translate-x-0">
+                            <a href="#slide2"
+                                class="bg-black w-10 h-10 rounded-full text-white flex justify-center items-center">❮</a>
+                            <a href="#slide1"
+                                class="bg-black w-10 h-10 rounded-full text-white flex justify-center items-center">❯</a>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="w-full lg:w-[502px] bg-black p-4 lg:p-8 rounded-xl lg:rounded-2xl lg:absolute lg:bottom-8 lg:right-8">
+                    <h3 class="text-lg font-extrabold text-white lg:text-2xl">Meet all the heroes from the field</h3>
+                    <p class="text-white font-medium text-sm lg:text-base">Dit amet consectetur. Condimentum dignissim
+                        adipiscing aliquam turpis placerat dolor. Purus urna in
+                        sit nullam proin. </p>
+                </div>
+            </div>
         </section>
     </main>
 
