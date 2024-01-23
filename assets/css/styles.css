@@ -20,8 +20,8 @@
     color: var(--secondary-color);
 }
 
-.text-secondary{
-    color: var(--secondary-text-color);
+.text-secondary {
+    color: var(--secondary-text-color) !important;
 }
 
 body {
@@ -38,7 +38,7 @@ span {
     color: var(--secondary-color);
 }
 
-/* .container {
-    width: 83% !important;
-    margin: 0 auto;
-} */
+html,
+body {
+    scroll-behavior: smooth;
+}
