@@ -9,6 +9,7 @@
     --title-color: #131318;
     --star-color: #F99808;
     --span-color: rgba(19, 19, 24, 0.5);
+    --secondary-text-color: rgba(19, 19, 24, 0.60);
 }
 
 .primary-color {
@@ -17,6 +18,10 @@
 
 .secondary-color {
     color: var(--secondary-color);
+}
+
+.text-secondary{
+    color: var(--secondary-text-color);
 }
 
 body {
@@ -30,7 +35,7 @@ h3 {
 
 p,
 span {
-    color: var(--secondary-color)
+    color: var(--secondary-color);
 }
 
 /* .container {
